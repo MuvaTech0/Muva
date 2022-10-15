@@ -1,0 +1,725 @@
+html,
+body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+#Logo_Homecontainer{
+    justify-content: center;
+    width: 100%;
+    height: 95%;
+    display: flex;
+}
+
+#Navbar_LogoContainer{
+    display: flex;
+}
+#Navbar_LogoContainer p{
+    margin-top: 5px;
+}
+
+#Navbar_Container{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+#Navbar_Subcontainer{
+
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+#lista_container{
+    display: flex;
+    margin-top: 10px;
+    list-style: none;
+    font-weight: 600;
+}
+#divContainer_p{
+    margin-left: 13%;
+    font-weight: 600;
+    font-size: 22px;
+    
+}
+.subItem_lista{
+    padding-left: 30px;
+}
+
+#divContainer_Position{
+    margin-top: 10%;
+}
+
+#Section_QuienesSomos{
+    width: 100%;
+    height: 105%;
+    background: 
+    -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+   -webkit-linear-gradient(-58deg, rgba(37, 37, 37, 0.9) 45%, rgb(247, 242, 242) 0%);
+   margin-bottom: 0;
+   
+}
+
+/* section quienes somos */
+
+
+#QuienesSomos_Logo{
+    margin-left: 65%;
+}
+
+#QuienesSomos_Name{
+    font-weight: bold;
+    rotate: -90deg;
+    margin-left: 96%;
+}
+
+#QuienesSomos_parrafo{
+    padding-top: 5%;
+  margin-left: 15%;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+  letter-spacing: 3px;
+  width: 150px;
+}
+
+#QuienesSomos_parrafo2{
+  padding-top: 5%;
+  margin-left: 65%;
+  font-size: 25px;
+  color: black;
+  letter-spacing: 3px;
+  width: 150px;
+}
+#record{
+    color: rgb(200, 24, 24);
+}
+
+
+#QuienesSomos_p{
+    color: white;
+}
+
+
+
+/*  Section_Porque*/
+
+#Section_Porque{
+    width: 100%;
+    height: 130%;
+    background-image: url('./assets/Background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Section_p{
+    padding-top: 50px;
+    margin-left: 43%;
+    margin-top: 0;
+    font-size: 40px;
+    color: white;
+}
+
+.Porque_card{
+    text-align: center;
+    margin-left: 30PX;
+    color: white;
+    border-radius: 20PX;
+    width: 250px;
+    height: 300px;
+    background:
+    -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+    -webkit-linear-gradient(-80deg, rgba(219, 51, 51, 0.9) 30%,  rgb(234, 232, 232)   0%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+#Porque_CardsContainer{
+    margin-top: 3%;
+    margin-left: 20%;
+    flex-wrap: wrap;
+    width: 60%;
+    display: flex;
+}
+.Porque_beneficio{
+    width: 70%;
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 20%;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Criterios*/
+#Porque_Criterios{
+    margin-top: 80px;
+}
+
+#criterios_p{
+    margin-top: 0;
+    margin-left: 38%;
+    font-size: 40px;
+    color: white;
+}
+
+#strong_p{
+    color: rgba(219, 51, 51, 0.9);
+}
+
+#examenes_cardcontainer{
+    z-index: +500;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+}
+
+.examenes_cards{
+    margin-left: 30PX;
+    font-weight: 700;
+    color: white;
+    width: 380px;
+    height: 580px;
+    background:
+    -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+    -webkit-linear-gradient(-90deg, rgba(47, 47, 47, 0.9) 15%,  rgb(241, 238, 238)   0%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.examen_cardtitle{
+    text-align: center;
+    padding-top: 7px;
+}
+
+.examen_clock{
+    color: black;
+    padding-left:22px;
+}
+
+.examen_certificado{ 
+    padding-left: 6%;
+    color: black;
+    text-decoration: underline;
+    padding-top: 1px;
+}
+
+.examen_price{
+    padding-left:0px;
+    color: black; 
+    width: 80%;
+}
+
+#ProyectoFinal_card{
+    color: black;
+    text-decoration: underline;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+#ProyectoFinal_Lista{
+    margin-top: 0;
+    padding-left: 15px;
+    color: black;
+    list-style: none;
+}
+#ProyectoFinal_Contenido{
+    color: black;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+#ProyectoFinal_Recordatorio{
+    color: black;
+    padding-top: 20px;
+    width: 80%;
+    padding-left: 20px;
+}
+
+
+
+#ProyectoFinal_Lista li {
+    padding-top: 8px;
+}
+
+#Examen_frontendContenido{
+    text-decoration: underline;
+    color: black;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+#Examen_frontendLista{
+    margin-top: 0;
+    padding-left: 20px;
+    list-style: none;
+    color: black;
+}
+
+#Examen_frontendLista li{
+ padding-top: 10px;
+}
+
+
+/* Backend  */
+#Examen_backendContenido{
+    text-decoration: underline;
+    padding-top: 5px;
+    color: black;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+#Examen_backendLista{
+    margin-top: 0;
+    padding-left: 15px;
+    list-style: none;
+    color: black;
+}
+
+#Examen_backendLista li{
+   padding-top: 10px;
+}
+
+
+/* Resolucion */
+#examen_resolucionContenido{
+    text-decoration: underline; 
+    color: black;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+
+#examen_resolucionLista{
+    width: 85%;
+    margin-top: 0;
+    color: black;
+    padding-left: 20px;
+    list-style: none;
+}
+
+#examen_resolucionLista li{
+    padding-top: 10px;
+    padding-left: 1px;
+ }
+
+
+
+
+
+ .examen_todo{
+    padding-left: 20px;
+    padding-top: 30px;
+    color: black;
+    margin-bottom: 0;
+ }
+
+
+ #Bootcamps_Container{
+    width: 100%;
+    height: 45%;
+    background-color: rgb(247, 242, 242);
+ }
+
+ #Bootcamps_p{
+    text-align: center;
+    font-size: 40px;
+}
+ 
+
+
+/* Bootcamps */
+#Image_Container{
+    width: 50%;
+    height: 100%;
+}
+#Bootcamps_p{
+    margin-top: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+#Bootcamps_CardsContainer{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+#ReactIcon{
+ width: 100px;
+}
+#JavascriptIcon{
+    width: 87px;  
+}
+#NodeIcon{
+    width: 142px;  
+}
+
+#ReacTSIcon{
+    width: 172px;  
+}
+
+.Bootcamps_subItem{
+text-align: center;
+}
+
+.CardTechnology{
+    margin-left: 2%;
+    height: 300px;
+    width: 20%;
+}
+.Bootcamp_Requisitos{
+    margin-left: 0;
+}
+
+/*  */
+#Pago_Container{
+    display: flex;
+    background-color: rgb(113, 112, 112);
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+#Pago_Container p{
+    color: white;
+    margin-top: 0;
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+#MercadoPago{
+padding-left: 15%;
+padding-top: 15%;
+width: 170px;    
+}
+
+.button_download{
+    margin-top: 2%;
+    width: 30%;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background-color:  rgba(219, 51, 51, 0.9);;
+    color: white;
+}
+
+#Footer_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(0, 0, 0);
+}
+#Copyright_footer{
+    margin-top: 0;
+    padding-top: 0.8%;
+    padding-left: 10px;
+    color: white;
+}
+
+.footer_links{
+    color: white;
+    padding-left: 5px;
+}
+
+#Icons_container{
+    font-size: 25px;
+    padding-top: 0.5%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #QuienesSomos_parrafo{
+        padding-top: 5%;
+      margin-left: 5%;
+      font-weight: 500;
+      font-size: 25px;
+      color: white;
+      letter-spacing: 3px;
+      width: 150px;
+    }
+    
+    #QuienesSomos_parrafo2{
+      padding-top: 40%;
+      margin-left: 25%;
+      font-size: 25px;
+      color: black;
+      letter-spacing: 3px;
+      width: 150px;
+    }
+
+    #Section_Porque{
+        width: 100%;
+        height: 320%;
+        background-image: url('./assets/Background.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #QuienesSomos_Name{
+        font-weight: bold;
+        rotate: 0deg;
+        padding-top: 50px;
+        text-align: center;
+    }    
+
+    #Section_p{
+        padding-top: 50px;
+        margin-left: 15%;
+        margin-top: 0;
+        font-size: 40px;
+        color: white;
+    }
+    
+
+    #Porque_CardsContainer{
+        margin-top: 3%;
+        margin-left: 0%;
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+    }
+
+
+    .Porque_card{
+        text-align: center;
+        margin-left: 30PX;
+        color: white;
+        border-radius: 20PX;
+        width: 40%;
+        margin-top: 15px;
+        height: 300px;
+        background:
+        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+        -webkit-linear-gradient(-80deg, rgba(219, 51, 51, 0.9) 35%,  rgb(234, 232, 232)   0%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    }
+    .Porque_beneficio{
+        width: 70%;
+        text-align: left;
+        margin-left: 20%;
+        font-size: 15px;
+        margin-top: 20%;
+        font-weight: bold;
+        color: black;
+    }
+    #criterios_p{
+        margin-top: 0;
+        margin-left: 15%;
+        font-size: 30px;
+        color: white;
+    }
+
+    .examenes_cards{
+        margin-left: 0PX;
+        font-weight: 700;
+        margin-top: 10px;
+        color: white;
+        font-size: 14px;
+        width: 80%;
+        height: 580px;
+        background:
+        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+        -webkit-linear-gradient(-90deg, rgba(47, 47, 47, 0.9) 15%,  rgb(241, 238, 238)   0%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #Bootcamps_Container{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(247, 242, 242);
+     }
+
+     #Bootcamps_CardsContainer{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 0%;
+        display: flex;
+        justify-content: start;
+        font-weight: 600;
+    }
+    .CardTechnology{
+        margin-top:12%;
+        margin-left: 15%;
+        height: 300px;
+        width: 30%;
+    }
+
+    .button_download{
+        margin-top: 2%;
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+        background-color:  rgba(219, 51, 51, 0.9);;
+        color: white;
+    }
+    .Bootcamps_subItem{
+        text-align: start;
+        font-size: 14px;
+        width: 100%;
+        }
+        
+  }
+
+
+  @media only screen and (max-width: 1224px) and (min-width: 601px){
+    #QuienesSomos_parrafo{
+        padding-top: 5%;
+      margin-left: 5%;
+      font-weight: 500;
+      font-size: 25px;
+      color: white;
+      letter-spacing: 3px;
+      width: 150px;
+    }
+    
+    #QuienesSomos_parrafo2{
+      padding-top: 20%;
+      margin-left: 50%;
+      font-size: 25px;
+      color: black;
+      letter-spacing: 3px;
+      width: 150px;
+    }
+
+    #Section_Porque{
+        width: 100%;
+        height: 320%;
+        background-image: url('./assets/Background.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #QuienesSomos_Name{
+        font-weight: bold;
+        rotate: 0deg;
+        padding-top: 50px;
+        text-align: center;
+    }    
+
+    #Section_p{
+        padding-top: 50px;
+        margin-left: 25%;
+        margin-top: 0;
+        font-size: 40px;
+        color: white;
+    }
+    
+
+    #Porque_CardsContainer{
+        margin-top: 3%;
+        margin-left: 0%;
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+    }
+
+
+    .Porque_card{
+        text-align: center;
+        margin-left: 10%;
+        color: white;
+        border-radius: 20PX;
+        width: 30%;
+        margin-top: 5px;
+        height: 300px;
+        background:
+        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+        -webkit-linear-gradient(-80deg, rgba(219, 51, 51, 0.9) 35%,  rgb(234, 232, 232)   0%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    }
+    .Porque_beneficio{
+        width: 70%;
+        text-align: left;
+        margin-left: 20%;
+        font-size: 15px;
+        margin-top: 20%;
+        font-weight: bold;
+        color: black;
+    }
+    #criterios_p{
+        margin-top: 0;
+        margin-left: 15%;
+        font-size: 30px;
+        color: white;
+    }
+
+    .examenes_cards{
+        margin-left: 5%;
+        font-weight: 700;
+        margin-top: 10px;
+        color: white;
+        font-size: 14px;
+        width: 50%;
+        height: 580px;
+        background:
+        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+        -webkit-linear-gradient(-90deg, rgba(47, 47, 47, 0.9) 15%,  rgb(241, 238, 238)   0%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+
+    #Bootcamps_Container{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(247, 242, 242);
+     }
+
+     #Bootcamps_CardsContainer{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 0%;
+        display: flex;
+        justify-content: start;
+        font-weight: 600;
+    }
+    .CardTechnology{
+        margin-top:12%;
+        margin-left: 15%;
+        height: 300px;
+        width: 30%;
+    }
+
+    .button_download{
+        margin-top: 2%;
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+        background-color:  rgba(219, 51, 51, 0.9);;
+        color: white;
+    }
+    .Bootcamps_subItem{
+        text-align: start;
+        font-size: 14px;
+        width: 100%;
+        }
+  }
+
+  
