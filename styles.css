@@ -121,7 +121,7 @@ a {
 
 #Section_Porque{
     width: 100%;
-    height: 130%;
+    height: 135%;
     background-image: url('./assets/Background.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -423,6 +423,15 @@ width: 170px;
     background-color:  rgba(219, 51, 51, 0.9);;
     color: white;
 }
+.button_download2{
+    margin-top: 2%;
+    width: 30%;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background-color:  rgba(0, 0, 0, 0.9);;
+    color: white;
+}
 
 #Footer_container{
     display: flex;
@@ -577,6 +586,18 @@ width: 170px;
         background-color:  rgba(219, 51, 51, 0.9);;
         color: white;
     }
+
+   
+    .button_download2{
+        margin-top: 2%;
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+        background-color:  rgba(0, 0, 0, 0.9);;
+        color: white;
+    }
+    
     .Bootcamps_subItem{
         text-align: start;
         font-size: 14px;
@@ -713,6 +734,163 @@ width: 170px;
         cursor: pointer;
         border: none;
         background-color:  rgba(219, 51, 51, 0.9);;
+        color: white;
+    }
+
+    .button_download2{
+        margin-top: 2%;
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+        background-color:  rgba(0, 0, 0, 0.9);;
+        color: white;
+    }
+    .Bootcamps_subItem{
+        text-align: start;
+        font-size: 14px;
+        width: 100%;
+        }
+  }
+
+
+  @media only screen and (max-width: 1824px) and (min-width: 1224px){
+    #QuienesSomos_parrafo{
+        padding-top: 5%;
+      margin-left: 5%;
+      font-weight: 500;
+      font-size: 25px;
+      color: white;
+      letter-spacing: 3px;
+      width: 150px;
+    }
+    
+    #QuienesSomos_parrafo2{
+      padding-top: 20%;
+      margin-left: 50%;
+      font-size: 25px;
+      color: black;
+      letter-spacing: 3px;
+      width: 150px;
+    }
+
+    #Section_Porque{
+        width: 100%;
+        height: 300%;
+        background-image: url('./assets/Background.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #QuienesSomos_Name{
+        font-weight: bold;
+        rotate: 90deg;
+        padding-top: 0px;
+        text-align: center;
+    }    
+
+    #Section_p{
+        padding-top: 50px;
+        margin-left: 45%;
+        margin-top: 0;
+        font-size: 40px;
+        color: white;
+    }
+    
+
+    #Porque_CardsContainer{
+        margin-top: 3%;
+        margin-left: 0%;
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+    }
+
+
+    .Porque_card{
+        text-align: center;
+        margin-left: 3%;
+        color: white;
+        border-radius: 20PX;
+        width: 20%;
+        margin-top: 5px;
+        height: 300px;
+        background:
+        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+        -webkit-linear-gradient(-80deg, rgba(219, 51, 51, 0.9) 35%,  rgb(234, 232, 232)   0%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    }
+    .Porque_beneficio{
+        width: 70%;
+        text-align: left;
+        margin-left: 20%;
+        font-size: 15px;
+        margin-top: 20%;
+        font-weight: bold;
+        color: black;
+    }
+    #criterios_p{
+        margin-top: 0;
+        margin-left: 40%;
+        font-size: 30px;
+        color: white;
+    }
+
+    .examenes_cards{
+        margin-left: 5%;
+        font-weight: 700;
+        margin-top: 10px;
+        color: white;
+        font-size: 14px;
+        width: 50%;
+        height: 580px;
+        background:
+        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+        -webkit-linear-gradient(-90deg, rgba(47, 47, 47, 0.9) 15%,  rgb(241, 238, 238)   0%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+
+    #Bootcamps_Container{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(247, 242, 242);
+     }
+
+     #Bootcamps_CardsContainer{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 0%;
+        display: flex;
+        justify-content: start;
+        font-weight: 600;
+    }
+    .CardTechnology{
+        margin-top:2%;
+        margin-left: 15%;
+        height: 300px;
+        width: 30%;
+    }
+
+    .button_download{
+        margin-top: 2%;
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+        background-color:  rgba(219, 51, 51, 0.9);;
+        color: white;
+    }
+
+    .button_download2{
+        margin-top: 2%;
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+        background-color:  rgba(0, 0, 0, 0.9);;
         color: white;
     }
     .Bootcamps_subItem{
