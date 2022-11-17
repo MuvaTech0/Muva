@@ -1,4 +1,5 @@
 html,
+
 body{
     height: 100%;
     margin: 0;
@@ -198,7 +199,7 @@ a {
     height: 580px;
     background:
     -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-    -webkit-linear-gradient(-90deg, rgba(47, 47, 47, 0.9) 15%,  rgb(241, 238, 238)   0%);
+    -webkit-linear-gradient(-90deg, rgba(47, 47, 47, 0.9) 15%,  rgb(255, 255, 255)   0%);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .examen_cardtitle{
@@ -213,7 +214,7 @@ a {
 
 .examen_certificado{ 
     padding-left: 6%;
-    color: black;
+    color: rgb(230, 41, 79);
     text-decoration: underline;
     padding-top: 1px;
 }
