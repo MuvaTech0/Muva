@@ -37,6 +37,10 @@ a {
     justify-content: center;
     display: flex;
 }
+:root{
+    --red : #df4747;
+    --redBootcamp : #eb4d4d;
+}
 
 #Navbar_Subcontainer{
 
@@ -68,12 +72,16 @@ a {
 
 #Section_QuienesSomos{
     width: 100%;
-    height: 105%;
-    background: 
-    -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-   -webkit-linear-gradient(-58deg, rgba(37, 37, 37, 0.9) 45%, rgb(250,250,251)0%);
-   margin-bottom: 0;
-   
+    display: flex;
+    background-color: #b94b4b;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+#Container_Muva{
+    display: flex;
+    justify-content: center;
 }
 
 /* section quienes somos */
@@ -83,37 +91,31 @@ a {
     margin-left: 65%;
 }
 
-#QuienesSomos_Name{
-    font-weight: bold;
-    rotate: -90deg;
-    margin-left: 96%;
-}
-
 #QuienesSomos_parrafo{
-    padding-top: 5%;
-  margin-left: 15%;
+  padding-top: 0;
   font-weight: 500;
   font-size: 25px;
   color: white;
   letter-spacing: 3px;
-  width: 150px;
+  width: calc(10%);
 }
 
-#QuienesSomos_parrafo2{
-  padding-top: 5%;
-  margin-left: 65%;
-  font-size: 25px;
-  color: black;
-  letter-spacing: 3px;
-  width: 150px;
+#Png_coding{
+    width: 10%;
+    object-fit: contain;
 }
+
+#senior{
+    color: var(--red);
+}
+
 #record{
-    color: rgb(200, 24, 24);
+    color: black;;
 }
 
 
 #QuienesSomos_p{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -122,48 +124,97 @@ a {
 
 #Section_Porque{
     width: 100%;
-    height: 135%;
-    background-image: url('./assets/Background.png');
+    height: auto;
+    background-image: url('./assets/M\ U\ V\ A.png');
+    background-color: #f7f2f2;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 #Section_p{
+    margin: 0;
     padding-top: 50px;
-    margin-left: 43%;
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 40px;
-    color: white;
+    color: var(--red);
+    font-weight: bolder;
 }
 
-.Porque_card{
-    text-align: center;
-    margin-left: 30PX;
-    color: white;
-    border-radius: 20PX;
-    width: 250px;
-    height: 300px;
-    background:
-    -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-    -webkit-linear-gradient(-80deg, rgb(230, 41, 79) 30%,  rgb(255, 255, 255)   0%);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-}
+
 #Porque_CardsContainer{
-    margin-top: 3%;
-    margin-left: 20%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 60%;
+    width: 90%;
     display: flex;
 }
+
+
+.Porque_card{
+    color: white;
+    text-align: center;
+    width: 30%;
+    margin-top: 40px;
+}
+
+.Porque_p{
+    color: var(--red);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 .Porque_beneficio{
-    width: 70%;
-    text-align: left;
-    margin-left: 20%;
-    margin-top: 20%;
+    margin-top: 10%;
     font-weight: bold;
     color: black;
 }
 
+#Examenes{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.examen_p{
+    margin-top: 0;
+    padding-left: 50px;
+}
+#Examen_card{
+    display: flex;
+    width: 400px;
+}
+#Examen_pExam{
+    color: var(--red);
+   font-weight: 900;
+}
+
+#Examen_Descripcion{
+    color: black;
+    font-size: 18px;
+}
+
+.Strong_examen{
+    color: var(--red);
+}
+
+hr{
+    width: 50%;
+}
+
+
+
+i{
+    color: var(--red);
+    font-size: 50px;
+}
 
 /* Criterios*/
 #Porque_Criterios{
@@ -181,161 +232,12 @@ a {
     color: rgba(219, 51, 51, 0.9);
 }
 
-#examenes_cardcontainer{
-    z-index: +500;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 50%;
-}
-
-.examenes_cards{
-    margin-left: 30PX;
-    font-weight: 700;
-    color: white;
-    width: 380px;
-    height: 580px;
-    background:
-    -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-    -webkit-linear-gradient(-90deg, rgba(47, 47, 47, 0.9) 15%,  rgb(255, 255, 255)   0%);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.examen_cardtitle{
-    text-align: center;
-    padding-top: 7px;
-}
-
-.examen_clock{
-    color: black;
-    padding-left:22px;
-}
-
-.examen_certificado{ 
-    padding-left: 6%;
-    color: rgb(230, 41, 79);
-    text-decoration: underline;
-    padding-top: 1px;
-}
-
-.examen_price{
-    padding-left:0px;
-    color: black; 
-    width: 80%;
-}
-
-#ProyectoFinal_card{
-    color: black;
-    text-decoration: underline;
-    padding-left: 20px;
-    margin-bottom: 0px;
-}
-
-#ProyectoFinal_Lista{
-    margin-top: 0;
-    padding-left: 15px;
-    color: black;
-    list-style: none;
-}
-#ProyectoFinal_Contenido{
-    color: black;
-    padding-top: 30px;
-    padding-left: 20px;
-}
-
-#ProyectoFinal_Recordatorio{
-    color: black;
-    padding-top: 20px;
-    width: 80%;
-    padding-left: 20px;
-}
-
-
-
-#ProyectoFinal_Lista li {
-    padding-top: 8px;
-}
-
-#Examen_frontendContenido{
-    text-decoration: underline;
-    color: black;
-    padding-top: 10px;
-    padding-left: 20px;
-    margin-bottom: 0;
-}
-
-#Examen_frontendLista{
-    margin-top: 0;
-    padding-left: 20px;
-    list-style: none;
-    color: black;
-}
-
-#Examen_frontendLista li{
- padding-top: 10px;
-}
-
-
-/* Backend  */
-#Examen_backendContenido{
-    text-decoration: underline;
-    padding-top: 5px;
-    color: black;
-    padding-left: 20px;
-    margin-bottom: 0;
-}
-
-#Examen_backendLista{
-    margin-top: 0;
-    padding-left: 15px;
-    list-style: none;
-    color: black;
-}
-
-#Examen_backendLista li{
-   padding-top: 10px;
-}
-
-
-/* Resolucion */
-#examen_resolucionContenido{
-    text-decoration: underline; 
-    color: black;
-    padding-left: 20px;
-    padding-top: 5px;
-    margin-bottom: 0;
-}
-
-#examen_resolucionLista{
-    width: 85%;
-    margin-top: 0;
-    color: black;
-    padding-left: 20px;
-    list-style: none;
-}
-
-#examen_resolucionLista li{
-    padding-top: 10px;
-    padding-left: 1px;
- }
-
-
-
-
-
- .examen_todo{
-    padding-left: 20px;
-    padding-top: 30px;
-    color: black;
-    margin-bottom: 0;
- }
 
 
  #Bootcamps_Container{
     width: 100%;
     height: 45%;
-    background-color: rgb(250,250,251);
+    background-color: rgb(219, 130, 130);
  }
 
  #Bootcamps_p{
@@ -359,12 +261,23 @@ a {
 
 
 #Bootcamps_CardsContainer{
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
     font-weight: 600;
+}
+
+ul{
+    list-style: none;
+    text-align: start;
+    line-height: 30px;
+    padding-left: 23%;
 }
 
 #ReactIcon{
@@ -377,9 +290,6 @@ a {
     width: 142px;  
 }
 
-#ReacTSIcon{
-    width: 172px;  
-}
 
 .Bootcamps_subItem{
 text-align: center;
@@ -387,7 +297,7 @@ text-align: center;
 
 .CardTechnology{
     margin-left: 2%;
-    height: 300px;
+    height: auto;
     width: 20%;
 }
 .Bootcamp_Requisitos{
@@ -401,10 +311,10 @@ text-align: center;
     width: 100%;
     height: 10%;
 }
+
 #Pago_Container p{
     margin-top: 0;
     color: black;
-    font-weight: bolder;
     padding-top: 30px;
     font-size: 25px;
 }
@@ -417,19 +327,21 @@ width: 170px;
 
 .button_download{
     margin-top: 2%;
-    width: 30%;
+    width: 100%;
     padding: 5px;
     cursor: pointer;
     border: none;
+    border-radius: 10px;
     background-color:  rgba(219, 51, 51, 0.9);;
     color: white;
 }
 .button_download2{
     margin-top: 2%;
-    width: 30%;
+    width: 100%;
     padding: 5px;
     cursor: pointer;
     border: none;
+    border-radius: 10px;
     background-color:  rgba(0, 0, 0, 0.9);;
     color: white;
 }
@@ -461,444 +373,3 @@ width: 170px;
 
 
 
-@media only screen and (max-width: 600px) {
-    #QuienesSomos_parrafo{
-        padding-top: 5%;
-      margin-left: 5%;
-      font-weight: 500;
-      font-size: 25px;
-      color: white;
-      letter-spacing: 3px;
-      width: 150px;
-    }
-    
-    #QuienesSomos_parrafo2{
-      padding-top: 40%;
-      margin-left: 25%;
-      font-size: 25px;
-      color: black;
-      letter-spacing: 3px;
-      width: 150px;
-    }
-
-    #Section_Porque{
-        width: 100%;
-        height: 320%;
-        background-image: url('./assets/Background.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-
-    #QuienesSomos_Name{
-        font-weight: bold;
-        rotate: 0deg;
-        padding-top: 50px;
-        text-align: center;
-    }    
-
-    #Section_p{
-        padding-top: 50px;
-        margin-left: 15%;
-        margin-top: 0;
-        font-size: 40px;
-        color: white;
-    }
-    
-
-    #Porque_CardsContainer{
-        margin-top: 3%;
-        margin-left: 0%;
-        flex-wrap: wrap;
-        width: 100%;
-        display: flex;
-    }
-
-
-    .Porque_card{
-        text-align: center;
-        margin-left: 30PX;
-        color: white;
-        border-radius: 20PX;
-        width: 40%;
-        margin-top: 15px;
-        height: 300px;
-        background:
-        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-        -webkit-linear-gradient(-80deg, rgba(219, 51, 51, 0.9) 35%,  rgb(234, 232, 232)   0%);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
-    }
-    .Porque_beneficio{
-        width: 70%;
-        text-align: left;
-        margin-left: 20%;
-        font-size: 15px;
-        margin-top: 20%;
-        font-weight: bold;
-        color: black;
-    }
-    #criterios_p{
-        margin-top: 0;
-        margin-left: 15%;
-        font-size: 30px;
-        color: white;
-    }
-
-    .examenes_cards{
-        margin-left: 0PX;
-        font-weight: 700;
-        margin-top: 10px;
-        color: white;
-        font-size: 14px;
-        width: 80%;
-        height: 580px;
-        background:
-        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-        -webkit-linear-gradient(-90deg, rgba(47, 47, 47, 0.9) 15%,  rgb(241, 238, 238)   0%);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    #Bootcamps_Container{
-        width: 100%;
-        height: 100%;
-        background-color: rgb(247, 242, 242);
-     }
-
-     #Bootcamps_CardsContainer{
-        flex-wrap: wrap;
-        width: 100%;
-        height: 0%;
-        display: flex;
-        justify-content: start;
-        font-weight: 600;
-    }
-    .CardTechnology{
-        margin-top:12%;
-        margin-left: 15%;
-        height: 300px;
-        width: 30%;
-    }
-
-    .button_download{
-        margin-top: 2%;
-        width: 100%;
-        padding: 5px;
-        cursor: pointer;
-        border: none;
-        background-color:  rgba(219, 51, 51, 0.9);;
-        color: white;
-    }
-
-   
-    .button_download2{
-        margin-top: 2%;
-        width: 100%;
-        padding: 5px;
-        cursor: pointer;
-        border: none;
-        background-color:  rgba(0, 0, 0, 0.9);;
-        color: white;
-    }
-    
-    .Bootcamps_subItem{
-        text-align: start;
-        font-size: 14px;
-        width: 100%;
-        }
-        
-  }
-
-
-  @media only screen and (max-width: 1224px) and (min-width: 601px){
-    #QuienesSomos_parrafo{
-        padding-top: 5%;
-      margin-left: 5%;
-      font-weight: 500;
-      font-size: 25px;
-      color: white;
-      letter-spacing: 3px;
-      width: 150px;
-    }
-    
-    #QuienesSomos_parrafo2{
-      padding-top: 20%;
-      margin-left: 50%;
-      font-size: 25px;
-      color: black;
-      letter-spacing: 3px;
-      width: 150px;
-    }
-
-    #Section_Porque{
-        width: 100%;
-        height: 320%;
-        background-image: url('./assets/Background.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-
-    #QuienesSomos_Name{
-        font-weight: bold;
-        rotate: 0deg;
-        padding-top: 50px;
-        text-align: center;
-    }    
-
-    #Section_p{
-        padding-top: 50px;
-        margin-left: 25%;
-        margin-top: 0;
-        font-size: 40px;
-        color: white;
-    }
-    
-
-    #Porque_CardsContainer{
-        margin-top: 3%;
-        margin-left: 0%;
-        flex-wrap: wrap;
-        width: 100%;
-        display: flex;
-    }
-
-
-    .Porque_card{
-        text-align: center;
-        margin-left: 10%;
-        color: white;
-        border-radius: 20PX;
-        width: 30%;
-        margin-top: 5px;
-        height: 300px;
-        background:
-        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-        -webkit-linear-gradient(-80deg, rgba(219, 51, 51, 0.9) 35%,  rgb(234, 232, 232)   0%);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
-    }
-    .Porque_beneficio{
-        width: 70%;
-        text-align: left;
-        margin-left: 20%;
-        font-size: 15px;
-        margin-top: 20%;
-        font-weight: bold;
-        color: black;
-    }
-    #criterios_p{
-        margin-top: 0;
-        margin-left: 15%;
-        font-size: 30px;
-        color: white;
-    }
-
-    .examenes_cards{
-        margin-left: 5%;
-        font-weight: 700;
-        margin-top: 10px;
-        color: white;
-        font-size: 14px;
-        width: 50%;
-        height: 580px;
-        background:
-        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-        -webkit-linear-gradient(-90deg, rgba(47, 47, 47, 0.9) 15%,  rgb(241, 238, 238)   0%);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-
-
-
-    #Bootcamps_Container{
-        width: 100%;
-        height: 100%;
-        background-color: rgb(247, 242, 242);
-     }
-
-     #Bootcamps_CardsContainer{
-        flex-wrap: wrap;
-        width: 100%;
-        height: 0%;
-        display: flex;
-        justify-content: start;
-        font-weight: 600;
-    }
-    .CardTechnology{
-        margin-top:12%;
-        margin-left: 15%;
-        height: 300px;
-        width: 30%;
-    }
-
-    .button_download{
-        margin-top: 2%;
-        width: 100%;
-        padding: 5px;
-        cursor: pointer;
-        border: none;
-        background-color:  rgba(219, 51, 51, 0.9);;
-        color: white;
-    }
-
-    .button_download2{
-        margin-top: 2%;
-        width: 100%;
-        padding: 5px;
-        cursor: pointer;
-        border: none;
-        background-color:  rgba(0, 0, 0, 0.9);;
-        color: white;
-    }
-    .Bootcamps_subItem{
-        text-align: start;
-        font-size: 14px;
-        width: 100%;
-        }
-  }
-
-
-  @media only screen and (max-width: 1824px) and (min-width: 1224px){
-    #QuienesSomos_parrafo{
-        padding-top: 5%;
-      margin-left: 5%;
-      font-weight: 500;
-      font-size: 25px;
-      color: white;
-      letter-spacing: 3px;
-      width: 150px;
-    }
-    
-    #QuienesSomos_parrafo2{
-      padding-top: 20%;
-      margin-left: 50%;
-      font-size: 25px;
-      color: black;
-      letter-spacing: 3px;
-      width: 150px;
-    }
-
-    #Section_Porque{
-        width: 100%;
-        height: 300%;
-        background-image: url('./assets/Background.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-
-    #QuienesSomos_Name{
-        font-weight: bold;
-        rotate: 90deg;
-        padding-top: 0px;
-        text-align: center;
-    }    
-
-    #Section_p{
-        padding-top: 50px;
-        margin-left: 45%;
-        margin-top: 0;
-        font-size: 40px;
-        color: white;
-    }
-    
-
-    #Porque_CardsContainer{
-        margin-top: 3%;
-        margin-left: 0%;
-        flex-wrap: wrap;
-        width: 100%;
-        display: flex;
-    }
-
-
-    .Porque_card{
-        text-align: center;
-        margin-left: 3%;
-        color: white;
-        border-radius: 20PX;
-        width: 20%;
-        margin-top: 5px;
-        height: 300px;
-        background:
-        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-        -webkit-linear-gradient(-80deg, rgba(219, 51, 51, 0.9) 35%,  rgb(234, 232, 232)   0%);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
-    }
-    .Porque_beneficio{
-        width: 70%;
-        text-align: left;
-        margin-left: 20%;
-        font-size: 15px;
-        margin-top: 20%;
-        font-weight: bold;
-        color: black;
-    }
-    #criterios_p{
-        margin-top: 0;
-        margin-left: 40%;
-        font-size: 30px;
-        color: white;
-    }
-
-    .examenes_cards{
-        margin-left: 5%;
-        font-weight: 700;
-        margin-top: 10px;
-        color: white;
-        font-size: 14px;
-        width: 50%;
-        height: 580px;
-        background:
-        -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-        -webkit-linear-gradient(-90deg, rgba(47, 47, 47, 0.9) 15%,  rgb(241, 238, 238)   0%);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-
-
-
-    #Bootcamps_Container{
-        width: 100%;
-        height: 100%;
-        background-color: rgb(247, 242, 242);
-     }
-
-     #Bootcamps_CardsContainer{
-        flex-wrap: wrap;
-        width: 100%;
-        height: 0%;
-        display: flex;
-        justify-content: start;
-        font-weight: 600;
-    }
-    .CardTechnology{
-        margin-top:2%;
-        margin-left: 15%;
-        height: 300px;
-        width: 30%;
-    }
-
-    .button_download{
-        margin-top: 2%;
-        width: 100%;
-        padding: 5px;
-        cursor: pointer;
-        border: none;
-        background-color:  rgba(219, 51, 51, 0.9);;
-        color: white;
-    }
-
-    .button_download2{
-        margin-top: 2%;
-        width: 100%;
-        padding: 5px;
-        cursor: pointer;
-        border: none;
-        background-color:  rgba(0, 0, 0, 0.9);;
-        color: white;
-    }
-    .Bootcamps_subItem{
-        text-align: start;
-        font-size: 14px;
-        width: 100%;
-        }
-  }
-
-  
