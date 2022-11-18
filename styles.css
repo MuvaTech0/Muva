@@ -1,7 +1,6 @@
 html,
 
 body{
-    height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     padding: 0;
@@ -20,8 +19,12 @@ a {
 #Logo_Homecontainer{
     justify-content: center;
     width: 100%;
-    height: 95%;
+    height: 95vh;
     display: flex;
+}
+
+#divContainer_Position{
+    margin-top: 10%;
 }
 
 #Navbar_LogoContainer{
@@ -66,9 +69,6 @@ a {
     padding-left: 30px;
 }
 
-#divContainer_Position{
-    margin-top: 10%;
-}
 
 #Section_QuienesSomos{
     width: 100%;
@@ -87,9 +87,6 @@ a {
 /* section quienes somos */
 
 
-#QuienesSomos_Logo{
-    margin-left: 65%;
-}
 
 #QuienesSomos_parrafo{
   padding-top: 0;
@@ -97,11 +94,11 @@ a {
   font-size: 25px;
   color: white;
   letter-spacing: 3px;
-  width: calc(10%);
+  width: calc(15%);
 }
 
 #Png_coding{
-    width: 10%;
+    width: 15%;
     object-fit: contain;
 }
 
@@ -237,7 +234,7 @@ i{
  #Bootcamps_Container{
     width: 100%;
     height: 45%;
-    background-color: rgb(219, 130, 130);
+    background-image: url('./assets/Background-Rojo.png');
  }
 
  #Bootcamps_p{
@@ -281,13 +278,13 @@ ul{
 }
 
 #ReactIcon{
- width: 100px;
+ width:calc(30%);
 }
 #JavascriptIcon{
-    width: 87px;  
+    width:calc(25%);
 }
 #NodeIcon{
-    width: 142px;  
+    width:calc(40%);
 }
 
 
@@ -372,4 +369,125 @@ width: 170px;
 }
 
 
+@media (max-width: 500px) { 
+    #Navbar_Subcontainer{
+        width: 90%;
+        margin-top: 10px;
+        display: block;
+        height: auto;
+    }
+    #Navbar_Container{
+        height: auto;
+    }
+    #Navbar_LogoContainer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #lista_container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    #Logo_Homecontainer{
+        height: auto;
+    }
+    
+    #Logo_navbar{
+        width: calc(15%);
+    }
+    .subItem_lista{
+        padding-left: 0px;
+    }
+
+    #Section_QuienesSomos{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        background-color: #b94b4b;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    
+#QuienesSomos_parrafo{
+    padding-top: 0;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 3px;
+    width: calc(70%);
+  }
+  
+  #Png_coding{
+      width: 30%;
+      object-fit: contain;
+  }
+
+
+/* Beneficios*/
+  #Porque_CardsContainer{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.Porque_card{
+    color: white;
+    text-align: center;
+    width: 35%;
+    margin-top: 40px;
+}
+
+.Porque_p{
+    color: var(--red);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.Porque_beneficio{
+    margin-top: 10%;
+    font-weight: bold;
+    color: black;
+}
+
+#Examen_card{
+    display: block;
+}
+
+#Examenes{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Examen_Logo{
+    text-align: center;
+}
+.examen_p{
+    margin-top: 0;
+    padding-left: 50px;
+}
+
+#Examen_pExam{
+    color: var(--red);
+   font-weight: 900;
+}
+
+#Examen_Descripcion{
+    color: black;
+    font-size: 18px;
+}
+  
+    
+}
 
