@@ -233,8 +233,11 @@ i{
 
  #Bootcamps_Container{
     width: 100%;
-    height: 45%;
+    height: auto;
     background-image: url('./assets/Background-Rojo.png');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
  }
 
  #Bootcamps_p{
@@ -259,14 +262,14 @@ i{
 
 #Bootcamps_CardsContainer{
     margin-top: 60px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
     width: 100%;
     height: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     font-weight: 600;
 }
 
@@ -334,6 +337,7 @@ width: 170px;
 }
 .button_download2{
     margin-top: 2%;
+    margin-bottom: 2%;
     width: 100%;
     padding: 5px;
     cursor: pointer;
@@ -357,16 +361,12 @@ width: 170px;
     padding-left: 10px;
     color: white;
 }
-
-.footer_links{
+#link_footer{
+    padding-top: 10px;
     color: white;
-    padding-left: 5px;
+    font-size: 30px;
 }
 
-#Icons_container{
-    font-size: 25px;
-    padding-top: 0.5%;
-}
 
 
 @media (max-width: 500px) { 
@@ -386,10 +386,19 @@ width: 170px;
         flex-wrap: wrap;
     }
     #lista_container{
+        width: 80%;
+        line-height: 60px;
+        margin-bottom: 0;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: start;
         flex-wrap: wrap;
+    }
+    #Muva_navbar{
+        font-size: 25px;
     }
 
     #Logo_Homecontainer{
@@ -398,6 +407,7 @@ width: 170px;
     
     #Logo_navbar{
         width: calc(15%);
+        display: none;
     }
     .subItem_lista{
         padding-left: 0px;
@@ -485,8 +495,89 @@ width: 170px;
 
 #Examen_Descripcion{
     color: black;
+    width: calc(90%);
     font-size: 18px;
 }
+
+
+ #Bootcamps_p{
+    text-align: center;
+    font-size: 40px;
+}
+ 
+
+
+/* Bootcamps */
+#Image_Container{
+    width: 50%;
+    height: 100%;
+}
+#Bootcamps_p{
+    margin-top: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+#Bootcamps_CardsContainer{
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;
+    text-align: start;
+    line-height: 30px;
+    padding-left: 23%;
+}
+
+#ReactIcon{
+ width:calc(30%);
+}
+#JavascriptIcon{
+    width:calc(25%);
+}
+#NodeIcon{
+    width:calc(40%);
+}
+
+
+.Bootcamps_subItem{
+text-align: center;
+}
+
+.CardTechnology{
+    margin-top: 10%;
+    margin-left: 2%;
+    height: auto;
+    width: 80%;
+}
+.Bootcamp_Requisitos{
+    margin-left: 0;
+}
+#Footer_container{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(0, 0, 0);
+}
+
+#Copyright_footer{
+    margin-top: 0;
+    padding-top: 0.8%;
+    color: white;
+}
+
   
     
 }
